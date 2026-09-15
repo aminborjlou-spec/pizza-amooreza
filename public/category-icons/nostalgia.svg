@@ -1,0 +1,15 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nostalgia Sandwich & Retro Soda -->
+  <!-- Classic Sub Bread -->
+  <path d="M6 24C6 21 8 19 12 19H28C32 19 34 21 34 24C34 27 32 29 28 29H12C8 29 6 27 6 24Z" stroke="#e5e5e5" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Diagonal score cuts on baguette -->
+  <path d="M12 21L15 27" stroke="#e5e5e5" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M18 21L21 27" stroke="#e5e5e5" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M24 21L27 27" stroke="#e5e5e5" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Retro wrapping paper fold -->
+  <path d="M10 29L16 35H24L30 29" stroke="#fbbf24" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Classic Retro Soda Bottle in background -->
+  <path d="M18 6H22V9L24 12V16H16V12L18 9V6Z" stroke="#e5e5e5" stroke-width="1.4" stroke-linejoin="round"/>
+  <line x1="17" y1="6" x2="23" y2="6" stroke="#fbbf24" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="17" y1="14" x2="23" y2="14" stroke="#e5e5e5" stroke-width="1"/>
+</svg>

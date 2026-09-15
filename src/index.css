@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'Hasti';
+  src: local('Hasti'), local('Hasti Bold'), local('Hasti-Bold'), local('Hasti-Regular'),
+       local('B Hasti'), local('BHasti'), local('B-Hasti'), local('B Hasti Bold'),
+       local('BHastiBold');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-hasti {
+  font-family: 'Hasti', 'Hasti Bold', 'B Hasti', 'BHasti', 'B-Hasti', 'Lalezar', cursive, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.font-diba {
+  font-family: 'Hasti', 'B Hasti', 'Diba', 'Lalezar', 'Vazirmatn', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: 'Hasti', 'B Hasti', 'Lalezar', 'Diba', 'Vazirmatn', system-ui, sans-serif;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes float3d1 {
+  0%, 100% {
+    transform: translateY(0px) rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  50% {
+    transform: translateY(-22px) rotateX(-5deg) rotateY(15deg) rotateZ(6deg);
+  }
+}
+
+@keyframes float3d2 {
+  0%, 100% {
+    transform: translateY(0px) rotateX(-10deg) rotateY(15deg) rotateZ(-4deg);
+  }
+  50% {
+    transform: translateY(-28px) rotateX(12deg) rotateY(-8deg) rotateZ(5deg);
+  }
+}
+
+@keyframes float3d3 {
+  0%, 100% {
+    transform: translateY(0px) rotateX(5deg) rotateY(5deg) rotateZ(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-18px) rotateX(-12deg) rotateY(-12deg) rotateZ(-6deg) scale(1.04);
+  }
+}
+
+@keyframes float3d4 {
+  0%, 100% {
+    transform: translateY(0px) rotateX(-5deg) rotateY(-15deg) rotateZ(4deg);
+  }
+  50% {
+    transform: translateY(-24px) rotateX(10deg) rotateY(10deg) rotateZ(-5deg);
+  }
+}
+
+.animate-float-1 {
+  animation: float3d1 7s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float3d2 9s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float3d3 8s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  animation: float3d4 11s ease-in-out infinite;
+}
+
+@keyframes slideInRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(45px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-rtl {
+  animation: slideInRightToLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

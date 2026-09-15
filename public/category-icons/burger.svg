@@ -1,0 +1,19 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Burger -->
+  <!-- Top Bun with Sesame Seeds -->
+  <path d="M8 17C8 10 13 8 20 8C27 8 32 10 32 17H8Z" stroke="#e5e5e5" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Sesame seeds -->
+  <circle cx="15" cy="11.5" r="0.9" fill="#fbbf24"/>
+  <circle cx="20" cy="10.5" r="0.9" fill="#fbbf24"/>
+  <circle cx="25" cy="11.5" r="0.9" fill="#fbbf24"/>
+  <circle cx="17.5" cy="14" r="0.9" fill="#fbbf24"/>
+  <circle cx="22.5" cy="14" r="0.9" fill="#fbbf24"/>
+  <!-- Wavy Lettuce -->
+  <path d="M6 19C8 18 9 20 11 19C13 18 14 20 16 19C18 18 19 20 21 19C23 18 24 20 26 19C28 18 29 20 31 19C33 18 34 20 34 19" stroke="#e5e5e5" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Melted Cheese Corner -->
+  <path d="M10 22H30L26 27L22 22" stroke="#fbbf24" stroke-width="1.4" stroke-linejoin="round" fill="#fbbf24" fill-opacity="0.15"/>
+  <!-- Burger Patty -->
+  <rect x="7" y="24" width="26" height="4" rx="2" stroke="#e5e5e5" stroke-width="1.8"/>
+  <!-- Bottom Bun -->
+  <path d="M9 30H31C31 33 27 34.5 20 34.5C13 34.5 9 33 9 30Z" stroke="#e5e5e5" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>
