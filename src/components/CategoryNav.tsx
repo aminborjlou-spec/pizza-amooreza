@@ -42,7 +42,7 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
         {/* Categories Bar */}
         <div
           ref={scrollRef}
-          className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth w-full px-1 sm:px-8 py-1"
+          className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth w-full px-1 sm:px-8 py-1 touch-pan-x touch-pan-y"
         >
           {/* "All" Category Pill */}
           <button

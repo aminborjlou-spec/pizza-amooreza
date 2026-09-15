@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @layer base {
+  html, body {
+    touch-action: pan-y pinch-zoom;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+  }
   body {
     font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
   }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FoodItem } from '../types';
-import { X, Plus, Minus, Heart, Sparkles, Phone, ShoppingBag, Check } from 'lucide-react';
+import { X, Plus, Minus, Heart, Phone, ShoppingBag, Check } from 'lucide-react';
 import { formatPrice, toPersianDigits } from '../utils/formatters';
 import { DigikalaPrice } from './DigikalaPrice';
 
@@ -79,13 +79,6 @@ export const FoodDetailModal: React.FC<FoodDetailModalProps> = ({
             }`}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent pointer-events-none" />
-
-          {food.isSpecial && (
-            <div className="absolute bottom-3 right-4 flex items-center gap-1.5 bg-gradient-to-r from-amber-600 to-amber-500 text-neutral-950 text-xs font-black px-3 py-1 rounded-full shadow-lg">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>پیشنهاد ویژه سرآشپز</span>
-            </div>
-          )}
         </div>
 
         {/* Scrollable Content Body */}

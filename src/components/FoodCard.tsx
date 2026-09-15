@@ -45,7 +45,8 @@ export const FoodCard: React.FC<FoodCardProps> = ({
           onLoad={() => setImgLoaded(true)}
           onError={() => setImgError(true)}
           referrerPolicy="no-referrer"
-          className={`w-full h-full ${
+          draggable={false}
+          className={`w-full h-full select-none pointer-events-none ${
             isLogoPlaceholder ? 'object-contain p-6 bg-neutral-950/60' : 'object-cover'
           } transition-transform duration-500 group-hover:scale-105 ${
             imgLoaded ? 'opacity-100' : 'opacity-40'

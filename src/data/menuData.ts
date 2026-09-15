@@ -58,20 +58,6 @@ export const CATEGORIES: Category[] = [
 
 export const FOOD_ITEMS: FoodItem[] = [
   {
-    "id": 127381,
-    "title": "سرآشپز",
-    "category": "پیتزا سایز۳۴",
-    "images": [
-      "https://api.rhinomenu.com/food/images/fftfq6yb/vhudds.jpeg"
-    ],
-    "details": "300 گرم گوشت راسته گوسفندی-بیکن پپرونی",
-    "price": "1380",
-    "numericPrice": 1380000,
-    "videoUrl": "",
-    "isAvailable": true,
-    "isSpecial": true
-  },
-  {
     "id": 127382,
     "title": "میکس گوشت و مرغ",
     "category": "پیتزا سایز۳۴",
@@ -168,20 +154,6 @@ export const FOOD_ITEMS: FoodItem[] = [
     "videoUrl": "",
     "isAvailable": false,
     "isSpecial": false
-  },
-  {
-    "id": 127392,
-    "title": "سرآشپز",
-    "category": "پیتزا سایز۲۴",
-    "images": [
-      "https://api.rhinomenu.com/food/images/fftfq6yb/mifiad.jpeg"
-    ],
-    "details": "170 گرم راسته گوسفندی-بیکن پپرونی",
-    "price": "700",
-    "numericPrice": 700000,
-    "videoUrl": "",
-    "isAvailable": true,
-    "isSpecial": true
   },
   {
     "id": 127393,

@@ -49,7 +49,8 @@ export const Header: React.FC<HeaderProps> = ({
                 <img
                   src={STORE_INFO.logo}
                   alt={STORE_INFO.name}
-                  className="w-full h-full object-contain"
+                  draggable={false}
+                  className="w-full h-full object-contain select-none pointer-events-none"
                   loading="eager"
                   referrerPolicy="no-referrer"
                   onError={(e) => {

@@ -143,7 +143,7 @@ export const SlidingMenuRow: React.FC<SlidingMenuRowProps> = ({
       <div className="relative">
         <div
           ref={sliderRef}
-          className="flex gap-3 sm:gap-4 overflow-x-auto pb-4 pt-1 px-1 scrollbar-none snap-x snap-mandatory scroll-smooth touch-pan-x"
+          className="flex gap-3 sm:gap-4 overflow-x-auto pb-4 pt-1 px-1 scrollbar-none snap-x snap-mandatory scroll-smooth touch-pan-x touch-pan-y"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {foods.map((food, index) => (
