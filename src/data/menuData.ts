@@ -17,42 +17,42 @@ export const CATEGORIES: Category[] = [
   {
     "id": "cat-1",
     "name": "پیتزا سایز۳۴",
-    "icon": "/category-icons/pizza34.svg"
+    "icon": "./category-icons/pizza34.svg"
   },
   {
     "id": "cat-2",
     "name": "پیتزا سایز۲۴",
-    "icon": "/category-icons/pizza24.svg"
+    "icon": "./category-icons/pizza24.svg"
   },
   {
     "id": "cat-3",
     "name": "نوستالژی",
-    "icon": "/category-icons/nostalgia.svg"
+    "icon": "./category-icons/nostalgia.svg"
   },
   {
     "id": "cat-4",
     "name": "ساندویچ های ویژه",
-    "icon": "/category-icons/special.svg"
+    "icon": "./category-icons/special.svg"
   },
   {
     "id": "cat-5",
     "name": "برگر ها",
-    "icon": "/category-icons/burger.svg"
+    "icon": "./category-icons/burger.svg"
   },
   {
     "id": "cat-6",
     "name": "ساندویچ های گرم",
-    "icon": "/category-icons/hot-sandwich.svg"
+    "icon": "./category-icons/hot-sandwich.svg"
   },
   {
     "id": "cat-7",
     "name": "ساندویچ های سرد",
-    "icon": "/category-icons/cold-sandwich.svg"
+    "icon": "./category-icons/cold-sandwich.svg"
   },
   {
     "id": "cat-8",
     "name": "پیش غذا",
-    "icon": "/category-icons/appetizer.svg"
+    "icon": "./category-icons/appetizer.svg"
   }
 ];
 
