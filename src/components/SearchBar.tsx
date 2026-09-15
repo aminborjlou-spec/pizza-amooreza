@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, X, ArrowDownUp } from 'lucide-react';
+import { Search, X, Sparkles, ArrowDownUp } from 'lucide-react';
 import { toPersianDigits } from '../utils/formatters';
 
 interface SearchBarProps {
@@ -7,6 +7,8 @@ interface SearchBarProps {
   onSearchChange: (query: string) => void;
   sortBy: 'default' | 'price-asc' | 'price-desc';
   onSortChange: (sort: 'default' | 'price-asc' | 'price-desc') => void;
+  filterSpecial: boolean;
+  onToggleFilterSpecial: () => void;
   resultCount: number;
 }
 
@@ -15,6 +17,8 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   onSearchChange,
   sortBy,
   onSortChange,
+  filterSpecial,
+  onToggleFilterSpecial,
   resultCount,
 }) => {
   return (
@@ -46,6 +50,20 @@ export const SearchBar: React.FC<SearchBarProps> = ({
 
         {/* Quick Filters / Sorters */}
         <div className="flex items-center gap-2">
+          {/* Special / Chef filter */}
+          <button
+            id="filter-special-btn"
+            onClick={onToggleFilterSpecial}
+            className={`flex items-center gap-1.5 px-3 py-2.5 rounded-2xl text-xs font-semibold transition-all shrink-0 cursor-pointer border ${
+              filterSpecial
+                ? 'bg-amber-500/20 text-amber-300 border-amber-500/60 shadow-sm'
+                : 'bg-neutral-900 border-neutral-800 text-neutral-400 hover:text-neutral-200'
+            }`}
+          >
+            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <span>ویژه و سرآشپز</span>
+          </button>
+
           {/* Sort Selector */}
           <div className="relative shrink-0">
             <select

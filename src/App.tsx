@@ -27,6 +27,7 @@ export default function App() {
   // Search & Filter state
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'default' | 'price-asc' | 'price-desc'>('default');
+  const [filterSpecial, setFilterSpecial] = useState(false);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
 
   // Toast notification for copy action
@@ -165,6 +166,11 @@ export default function App() {
       );
     }
 
+    // Filter by Specials
+    if (filterSpecial) {
+      result = result.filter((f) => f.isSpecial);
+    }
+
     // Filter by Favorites
     if (showFavoritesOnly) {
       result = result.filter((f) => favorites.includes(f.id));
@@ -182,10 +188,10 @@ export default function App() {
     }
 
     return result;
-  }, [selectedCategory, searchQuery, showFavoritesOnly, favorites, sortBy]);
+  }, [selectedCategory, searchQuery, filterSpecial, showFavoritesOnly, favorites, sortBy]);
 
   // Group foods by category when "تمام منو" is selected (no single category selected) and no search/filter active
-  const isGroupedView = !selectedCategory && !searchQuery.trim() && !showFavoritesOnly && sortBy === 'default';
+  const isGroupedView = !selectedCategory && !searchQuery.trim() && !filterSpecial && !showFavoritesOnly && sortBy === 'default';
 
   return (
     <div className="min-h-screen bg-[#fafafa] text-neutral-900 flex flex-col font-sans relative selection:bg-amber-500/30 selection:text-amber-950 overflow-x-hidden">
@@ -219,6 +225,8 @@ export default function App() {
         onSearchChange={setSearchQuery}
         sortBy={sortBy}
         onSortChange={setSortBy}
+        filterSpecial={filterSpecial}
+        onToggleFilterSpecial={() => setFilterSpecial((prev) => !prev)}
         resultCount={filteredFoods.length}
       />
 
@@ -283,6 +291,7 @@ export default function App() {
               onClick={() => {
                 setSearchQuery('');
                 setSelectedCategory(null);
+                setFilterSpecial(false);
                 setShowFavoritesOnly(false);
                 setSortBy('default');
               }}
